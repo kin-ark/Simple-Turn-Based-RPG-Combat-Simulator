@@ -1,0 +1,17 @@
+TestCase,AIType,Outcome/WinRate,AvgTurns,AvgDecisionTime_ns
+1. Baseline,Greedy,0.0%,9.00,158
+1. Baseline,DynamicProgramming,100.0%,9.00,423
+2. Resource Scarcity,Greedy,0.0%,9.00,21
+2. Resource Scarcity,DynamicProgramming,0.0%,1.00,235
+3. Race Against Time,Greedy,0.0%,6.00,21
+3. Race Against Time,DynamicProgramming,0.0%,1.00,194
+4. Durable Enemy,Greedy,100.0%,7.00,29
+4. Durable Enemy,DynamicProgramming,100.0%,7.00,152
+5. Glass Cannon Enemy,Greedy,100.0%,4.00,21
+5. Glass Cannon Enemy,DynamicProgramming,100.0%,4.00,158
+6. Strategic Cooldown,Greedy,0.0%,9.00,25
+6. Strategic Cooldown,DynamicProgramming,100.0%,9.00,127
+7. Mana Trap,Greedy,0.0%,9.00,22
+7. Mana Trap,DynamicProgramming,0.0%,1.00,165
+8. Perfect Lethal,Greedy,100.0%,4.00,22
+8. Perfect Lethal,DynamicProgramming,100.0%,4.00,100
