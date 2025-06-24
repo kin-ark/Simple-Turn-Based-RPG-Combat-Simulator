@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ExperimentRunner {
-    // Change this value to 1 to run a single simulation per test case
-    private static final int NUM_RUNS = 1000;
+    private static final int NUM_RUNS = 1;
 
     // Helper record to define test cases cleanly
     private record TestCase(String name, GameState state) {}
@@ -57,7 +56,6 @@ public class ExperimentRunner {
         long totalAvgDecisionTime = 0;
         String finalOutcome = "Loss";
 
-        // DP AI is stateful, so it needs a reset before each test case run.
         ai.reset();
 
         System.out.print("  Testing " + ai.getAIType() + " AI... ");
@@ -69,7 +67,7 @@ public class ExperimentRunner {
             }
             totalTurns += result.totalTurns;
             totalAvgDecisionTime += result.averageDecisionTimeNs;
-            if (i == 0) finalOutcome = result.outcome; // Store result of the first run
+            if (i == 0) finalOutcome = result.outcome;
         }
         System.out.println("Done.");
 

@@ -25,8 +25,6 @@ class BattleSimulator {
             long endTime = System.nanoTime();
             decisionTimes.add(endTime - startTime);
 
-            // *** FIX FOR NULL POINTER EXCEPTION ***
-            // If AI returns null, it means it cannot find a winning path and concedes.
             if (pcAction == null) {
                 break;
             }

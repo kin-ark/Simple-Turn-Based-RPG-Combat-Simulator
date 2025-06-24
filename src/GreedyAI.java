@@ -7,7 +7,6 @@ class GreedyAI implements AILogic {
 
     @Override
     public void reset() {
-        // Greedy AI is stateless, so nothing to reset
     }
 
     @Override

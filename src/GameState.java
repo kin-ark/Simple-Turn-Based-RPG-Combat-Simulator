@@ -4,7 +4,7 @@ class GameState {
     private final int pcHp;
     private final int pcMana;
     private final int enemyHp;
-    private final int enemyDamage; // New field for varied enemies
+    private final int enemyDamage;
     private final int fireballCooldown;
 
     public GameState(int pcHp, int pcMana, int enemyHp, int enemyDamage, int fireballCooldown) {
